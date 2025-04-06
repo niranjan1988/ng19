@@ -1,1 +1,12 @@
-{{title}}
+{{title()}} <br>
+<button (click)="update()">Update</button> &nbsp;
+<button (click)="setNewValue()">Set</button>
+
+<br><br>
+
+<button (click)="showTemplate()">Show Template</button>
+
+<div *appCustomNgIf="showTmpl()">
+    This is the template
+</div>
+
